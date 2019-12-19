@@ -9,6 +9,8 @@ inputs:
     description: Implementation of Scheme to use
   impl-version:
     description: Version range or exact version of Scheme to use
+  option:
+    description: Option Specific
 runs:
   using: node12
   main: lib/setup-scheme.js
