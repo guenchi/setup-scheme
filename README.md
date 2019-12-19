@@ -1,2 +1,2 @@
 # setup-scheme
-Github Action CI / CD environnement for Scheme
+Github Action CI / CD setup for Scheme
