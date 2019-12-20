@@ -5,9 +5,9 @@ branding:
   color: blue
   icon: code
 inputs:
-  impl-name:
+  implementation:
     description: Implementation of Scheme to use
-  impl-version:
+  version:
     description: Version range or exact version of Scheme to use
   option:
     description: Option Specific
