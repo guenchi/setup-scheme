@@ -36,5 +36,6 @@ jobs:
       uses: guenchi/setup-scheme@dev
       with:
         implementation: chez
+        option: raven
 
 
