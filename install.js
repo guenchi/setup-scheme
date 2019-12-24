@@ -13,7 +13,7 @@ async function main() {
     const version = core.getInput('version');
     const option = core.getInput('option');
     
-    if (process.platform === 'macos') {
+    if (process.platform === 'darwin') {
         switch (implementation) {
 
             case'chez':
