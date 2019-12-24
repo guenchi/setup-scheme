@@ -20,9 +20,7 @@ async function main() {
 
             case'chez':
                 await exec('brew install chezscheme');
-                
-                    await exec('cd /usr/local/bin');
-                    await exec('ln -s scheme chez');
+                await exec('ln -s /usr/local/bin/scheme /usr/local/bin/chez');
                 
                 break;
         }
