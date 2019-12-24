@@ -1,6 +1,5 @@
 const core = require('@actions/core');
 const {exec} = require('@actions/exec');
-const path = require('path')
 
 
 main().catch(err =>{
@@ -27,8 +26,8 @@ async function main() {
                 break;
         }
         if(option === 'raven'){
-            await exec((path.join(__dirname, 'curl -L http://ravensc.com/install')));
-            await exec((path.join(__dirname, 'scheme install.sc')));
+            await exec('curl -L http://ravensc.com/install');
+            await exec('scheme /bin/install.sc');
         }
     } else if (process.platform === 'linux') {
         switch (implementation) {
