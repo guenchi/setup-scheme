@@ -22,4 +22,17 @@ jobs:
       with:
         implementation: chez
 
+  Linux:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chez
+
 
