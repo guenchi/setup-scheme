@@ -22,7 +22,7 @@ async function main() {
                 await exec('brew install chezscheme');
                 
                     await exec('cd /usr/local/bin');
-                    await exec('ln -s chez scheme');
+                    await exec('ln -s scheme chez');
                 
                 break;
         }
