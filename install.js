@@ -19,10 +19,7 @@ async function main() {
         switch (implementation) {
 
             case'chez':
-                await exec('brew install chezscheme');
-                
-                    await exec('cd /usr/local/bin');
-                    await exec('cp chez scheme');
+                await exec('brew install chezscheme | cd /usr/local/bin | cp chez scheme');
                 
                 break;
         }
