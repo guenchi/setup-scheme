@@ -1,4 +1,4 @@
-name: Master
+name: Dev2
 
 on: 
    push:
@@ -9,7 +9,7 @@ on:
        - dev2
 
 jobs:
-  MacOS Chez:
+  MacOS-Chez:
 
     runs-on: macos-latest
 
@@ -24,7 +24,7 @@ jobs:
 
     - run: chez --version
   
-  MacOS MIT:
+  MacOS-MIT:
 
     runs-on: macos-latest
 
