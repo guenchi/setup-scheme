@@ -21,7 +21,7 @@ jobs:
       uses: guenchi/setup-scheme@master
       with:
         implementation: chez
-    - run: chez --version
+    - run: /usr/local/bin/chez --version
 
   Linux:
 

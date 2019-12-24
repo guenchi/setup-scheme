@@ -17,7 +17,7 @@ async function main() {
         switch (implementation) {
 
             case'chez':
-                await exec('sudo brew install chezscheme');
+                await exec('brew install chezscheme');
                 break;
         }
 
