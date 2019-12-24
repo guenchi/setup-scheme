@@ -4,6 +4,7 @@ Github Action CI / CD setup for Scheme
 ### Usage
 
 See [action.yml](https://github.com/guenchi/setup-scheme/blob/master/action.yml)
+
 Exemple: [ci.yml](https://github.com/guenchi/setup-scheme/blob/master/.github/workflows/ci.yml)
 
 ```
