@@ -18,11 +18,10 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@dev
+      uses: guenchi/setup-scheme@master
       with:
         implementation: chez
-        option: raven
-    - run: scheme --version
+    - run: chez --version
 
   Linux:
 
@@ -33,11 +32,8 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@dev
+      uses: guenchi/setup-scheme@master
       with:
         implementation: chez
-        option: raven
 
     - run: scheme --version
-
-
