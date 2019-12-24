@@ -1,6 +1,5 @@
 const core = require('@actions/core');
 const {exec} = require('@actions/exec');
-const path = require('path')
 
 
 main().catch(err =>{
@@ -27,8 +26,9 @@ async function main() {
                 break;
         }
         if(option === 'raven'){
-            await exec('curl -L http://ravensc.com/install'); 
-            await exec('scheme',[path.join(__dirname, 'install.sc')]);
+            await exec('curl -L https://github.com/guenchi/Raven/blob/master/raven.sc');
+            await exec('chmod +x raven.sc');
+           
         }
     } else if (process.platform === 'linux') {
         switch (implementation) {
