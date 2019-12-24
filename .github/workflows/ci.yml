@@ -19,7 +19,7 @@ jobs:
 
     - name: use Setup-Scheme
       uses: guenchi/setup-scheme@master
-      with:
-        implementation: chez
+      # with:
+      #   implementation: chez
 
 
