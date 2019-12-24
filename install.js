@@ -21,12 +21,14 @@ async function main() {
             case'chez':
                 await exec('brew install chezscheme');
                 if(option === 'raven'){
-                    await exec('cp /usr/local/bin/chez /usr/local/bin/scheme');
+                    await exec('cd /usr/local/bin');
+                    await exec('cp chez scheme')
                 }
                 break;
         }
         if(option === 'raven'){
-            await exec('curl -L http://ravensc.com/install | sudo scheme');
+            await exec('curl -L http://ravensc.com/install');
+            await exec('scheme install.sc'); 
         }
     } else if (process.platform === 'linux') {
         switch (implementation) {
