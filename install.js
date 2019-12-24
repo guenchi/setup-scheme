@@ -19,8 +19,11 @@ async function main() {
         switch (implementation) {
 
             case'chez':
-                await exec('brew install chezscheme | cd /usr/local/bin | cp chez scheme');
+                await exec('brew install chezscheme');
                 
+                    await exec('cd /usr/local/bin');
+                    await exec('ln -s chez scheme');
+                }
                 break;
         }
         // if(option === 'raven'){
