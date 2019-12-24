@@ -2,8 +2,8 @@ name: Setup Scheme
 description: Set up an Scheme environment and add it to the PATH
 author: Guenchi
 branding:
-  color: yellow
-  icon: code
+  color: blue
+  icon: git-pull-request
 inputs:
   implementation:
     description: Implementation of Scheme to use
