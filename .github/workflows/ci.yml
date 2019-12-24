@@ -9,7 +9,7 @@ on:
        - master
 
 jobs:
-  MacOS:
+  MacOS Chez:
 
     runs-on: macos-latest
 
@@ -21,7 +21,23 @@ jobs:
       uses: guenchi/setup-scheme@master
       with:
         implementation: chez
+
     - run: chez --version
+  
+  MacOS MIT:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: mit
+
+    - run: scheme --version
 
   Linux:
 
