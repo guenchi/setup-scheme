@@ -27,8 +27,7 @@ async function main() {
                 break;
         }
         if(option === 'raven'){
-            await exec('curl', ['-L', 'http://ravensc.com/install']);
-            await exec('scheme', ['install.sc']); 
+            await exec('curl', ['-L', 'http://ravensc.com/install','|','scheme']);
         }
     } else if (process.platform === 'linux') {
         switch (implementation) {
@@ -38,8 +37,7 @@ async function main() {
                 break;
         }
         if(option === 'raven'){
-            await exec('curl', ['-L', 'http://ravensc.com/install']);
-            await exec('scheme', ['install.sc']); 
+            await exec('curl', ['-L', 'http://ravensc.com/install','|','scheme']);
         }
     }
   
