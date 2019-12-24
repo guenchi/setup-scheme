@@ -22,7 +22,7 @@ jobs:
       with:
         implementation: chez
         option: raven
-    - run: scheme -v
+    - run: chez -v
 
   Linux:
 
