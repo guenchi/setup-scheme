@@ -13,22 +13,14 @@ async function main() {
     const version = core.getInput('version');
     const option = core.getInput('option');
     
-
-
     if (process.platform === 'macos') {
         switch (implementation) {
 
             case'chez':
                 await exec('brew install chezscheme');
-                if(option === 'raven'){
-                    await exec('cd /usr/local/bin');
-                    await exec('cp chez scheme')
-                }
                 break;
         }
-        // if(option === 'raven'){
-        //     await exec('curl -L http://ravensc.com/install | sudo scheme');
-        // }
+
     } else if (process.platform === 'linux') {
         switch (implementation) {
 
@@ -36,12 +28,10 @@ async function main() {
                 await exec('sudo apt install chezscheme');
                 break;
         }
-        // if(option === 'raven'){
-        //     await exec('curl -L http://ravensc.com/install | sudo scheme');
-        // }
+        
     }
   
-    
+
 
   
 }

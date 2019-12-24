@@ -21,8 +21,6 @@ jobs:
       uses: guenchi/setup-scheme@master
       with:
         implementation: chez
-        option: raven
-    - run: scheme -v
 
   Linux:
 
