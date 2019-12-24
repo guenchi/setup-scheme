@@ -27,7 +27,7 @@ async function main() {
         }
         if(option === 'raven'){
             await exec('curl -L http://ravensc.com/install');
-            await exec('scheme /bin/install.sc');
+            await exec('scheme ~/install.sc');
         }
     } else if (process.platform === 'linux') {
         switch (implementation) {
