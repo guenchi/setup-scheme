@@ -21,7 +21,7 @@ jobs:
       uses: guenchi/setup-scheme@master
       with:
         implementation: chez
-    - runs: chez -v
+    - run: chez -v
 
   Linux:
 
@@ -36,6 +36,6 @@ jobs:
       with:
         implementation: chez
 
-    - runs: scheme -v
+    - run: scheme -v
 
 
