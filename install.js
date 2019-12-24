@@ -23,7 +23,7 @@ async function main() {
                 
                     await exec('cd /usr/local/bin');
                     await exec('ln -s chez scheme');
-                }
+                
                 break;
         }
         // if(option === 'raven'){
