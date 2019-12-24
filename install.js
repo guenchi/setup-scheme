@@ -18,7 +18,6 @@ async function main() {
 
             case'chez':
                 await exec('brew install chezscheme');
-                console.log('Chez Scheme is installed');
                 break;
         }
 
