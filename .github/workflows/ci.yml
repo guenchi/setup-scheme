@@ -37,7 +37,7 @@ jobs:
       with:
         implementation: mit
 
-    - run: mit-scheme --version
+    - run: mit --version
 
   Linux:
 
