@@ -20,10 +20,10 @@ async function main() {
 
             case'chez':
                 await exec('brew install chezscheme');
-                // if(option === 'raven'){
-                //     await exec('cd',['/usr/local/bin']);
-                //     await exec('cp',['chez','scheme']);
-                // }
+                if(option === 'raven'){
+                    await exec('cd',['/usr/local/bin']);
+                    await exec('cp',['chez','scheme']);
+                }
                 break;
         }
         // if(option === 'raven'){
