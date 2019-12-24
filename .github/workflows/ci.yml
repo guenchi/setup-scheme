@@ -22,7 +22,7 @@ jobs:
       with:
         implementation: chez
         option: raven
-    - run: chez -v
+    - run: chez --version
 
   Linux:
 
@@ -37,5 +37,7 @@ jobs:
       with:
         implementation: chez
         option: raven
+
+    - run: scheme --version
 
 

@@ -15,7 +15,7 @@ async function main() {
     
 
 
-    if (process.platform === 'macos') {
+    if (process.platform === 'darwin') {
         switch (implementation) {
 
             case'chez':
