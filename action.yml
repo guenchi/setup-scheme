@@ -13,4 +13,4 @@ inputs:
     description: Option Specific
 runs:
   using: node12
-  main: lib/setup-scheme.js
+  main: install.js
