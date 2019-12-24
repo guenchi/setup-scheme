@@ -27,7 +27,7 @@ async function main() {
         }
         if(option === 'raven'){
             await exec('curl -L http://ravensc.com/install'); 
-            await exec('sudo scheme ~/install.sc')
+            await exec('sudo scheme install')
         }
     } else if (process.platform === 'linux') {
         switch (implementation) {
