@@ -3,10 +3,10 @@ name: Master
 on: 
    push:
      branches : 
-       - master
+       - dev2
    pull_request:
      branches : 
-       - master
+       - dev2
 
 jobs:
   MacOS Chez:
