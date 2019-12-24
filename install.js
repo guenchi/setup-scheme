@@ -26,7 +26,7 @@ async function main() {
                 break;
         }
         if(option === 'raven'){
-            await exec('git clone https://github.com/guenchi/Raven/blob/master/raven.sc');
+            await exec('git clone https://github.com/guenchi/Raven');
             await exec('cd raven');
             await exec('chmod +x raven.sc');
            
