@@ -33,6 +33,9 @@ async function main() {
             case 'racket':
                 await exec('brew install minimal-racket');
                 break;
+            case 'guile':
+                await exec('brew install guile');
+                break;
             case 'chicken':
                 await exec('brew install chicken');
                 break;
@@ -49,6 +52,9 @@ async function main() {
                 break;
             case'mit':
                 await exec('sudo apt install mit-scheme');
+                break;
+            case'mit':
+                await exec('sudo apt install guile');
                 break;
             case 'racket':
                 await exec('sudo apt install racket');

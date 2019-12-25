@@ -1,12 +1,12 @@
-name: Master
+name: Dev2
 
 on: 
    push:
      branches : 
-       - master
+       - dev2
    pull_request:
      branches : 
-       - master
+       - dev2
 
 jobs:
   MacOS-Chez:
@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
 
@@ -33,7 +33,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: gambit
 
@@ -48,7 +48,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: grebil
 
@@ -66,7 +66,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: mit
 
@@ -81,11 +81,26 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: racket
 
     - run: racket --version
+
+  MacOS-Guile:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@dev2
+      with:
+        implementation: guile
+
+    - run: guile --version
 
   MacOS-Chicken:
 
@@ -96,7 +111,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chicken
 
@@ -111,7 +126,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
 
@@ -126,7 +141,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: gambit
 
@@ -141,7 +156,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: mit
 
@@ -156,9 +171,24 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: racket
 
     - run: racket --version
 
+
+  Linux-Guile:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@dev2
+      with:
+        implementation: guile
+
+    - run: guile --version
