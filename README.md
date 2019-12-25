@@ -50,5 +50,4 @@ bigloo
 larceny
 ypsilon
 guile
-chicken
 ```
