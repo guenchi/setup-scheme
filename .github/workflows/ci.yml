@@ -24,7 +24,7 @@ jobs:
 
     - run: chez --version
   
-  MacOS-Gambit:
+  MacOS-MIT:
 
     runs-on: macos-latest
 
@@ -35,9 +35,9 @@ jobs:
     - name: use Setup-Scheme
       uses: guenchi/setup-scheme@master
       with:
-        implementation: gambit
+        implementation: mit
 
-    - run: gsi --version
+    - run: scheme --version
 
   Linux:
 
