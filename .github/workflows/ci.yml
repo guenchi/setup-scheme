@@ -69,7 +69,7 @@ jobs:
 
     - run: scheme --version
 
-    Linux-Gambit:
+  Linux-Gambit:
 
     runs-on: ubuntu-latest
 
