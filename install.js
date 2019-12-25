@@ -48,7 +48,7 @@ async function main() {
                 await exec('sudo apt install mit-scheme');
                 break;
             case 'racket':
-                await exec('sudo apt install racket-cs');
+                await exec('sudo apt install racket');
                 break;
         }
         

@@ -36,7 +36,9 @@ Grebil Scheme has only MacOS version.
 ```
 Chez Scheme          chez
 Gambit Scheme        gambit
+Grebil Scheme        grebil
 MIT Scheme           mit
+Racket               racket
 ```
 
 
@@ -45,7 +47,6 @@ MIT Scheme           mit
 ```
 cyclone
 bigloo
-rackect
 larceny
 ypsilon
 guile
