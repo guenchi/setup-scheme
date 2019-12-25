@@ -87,6 +87,21 @@ jobs:
 
     - run: racket --version
 
+  MacOS-Chicken:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chicken
+
+    - run: csi
+
   Linux-Chez:
 
     runs-on: ubuntu-latest
@@ -146,3 +161,4 @@ jobs:
         implementation: racket
 
     - run: racket --version
+

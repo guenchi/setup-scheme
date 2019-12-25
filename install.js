@@ -33,6 +33,9 @@ async function main() {
             case 'racket':
                 await exec('brew install minimal-racket');
                 break;
+            case 'chicken':
+                await exec('brew install chicken');
+                break;
         }
 
     } else if (process.platform === 'linux') {

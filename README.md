@@ -30,15 +30,17 @@ for Grebil Scheme:
             export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
             gxi yourTestFiles.ss
 ```
-Grebil Scheme has only MacOS version.
+
 
 ### Implementation tag: 
 ```
-Chez Scheme          chez
-Gambit Scheme        gambit
-Grebil Scheme        grebil
-MIT Scheme           mit
-Racket               racket
+                                          MacOS           Linux
+Chez Scheme                chez             X               X
+Gambit Scheme              gambit           X               X
+Grebil Scheme              grebil           X
+MIT Scheme                 mit              X               X
+Racket                     racket           X               X
+Chicken Scheme             chicken          X
 ```
 
 
@@ -50,5 +52,4 @@ bigloo
 larceny
 ypsilon
 guile
-chicken
 ```
