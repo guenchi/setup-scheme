@@ -1,12 +1,12 @@
-name: Master
+name: Dev2
 
 on: 
    push:
      branches : 
-       - master
+       - dev2
    pull_request:
      branches : 
-       - master
+       - dev2
 
 jobs:
   MacOS-Chez:
@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
 
@@ -33,11 +33,26 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: gambit
 
     - run: gsi -v
+
+  MacOS-Gambit:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@dev2
+      with:
+        implementation: grebil
+
+    - run: gxi
 
   MacOS-MIT:
 
@@ -48,7 +63,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: mit
 
@@ -63,7 +78,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
 
@@ -78,7 +93,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: gambit
 
@@ -93,7 +108,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: mit
 
