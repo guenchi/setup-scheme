@@ -31,7 +31,7 @@ async function main() {
                 await exec('brew install mit-scheme');
                 break;
             case 'racket':
-                await exec('brew cask install racket');
+                await exec('brew cask install racket-cs');
                 break;
         }
 
