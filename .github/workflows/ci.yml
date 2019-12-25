@@ -24,6 +24,21 @@ jobs:
 
     - run: chez --version
   
+  MacOS-Gambit:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
   MacOS-MIT:
 
     runs-on: macos-latest
@@ -53,6 +68,21 @@ jobs:
         implementation: chez
 
     - run: scheme --version
+
+  Linux-Gambit:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
 
   Linux-MIT:
 

@@ -19,6 +19,11 @@ async function main() {
             case 'chez':
                 await exec('brew install chezscheme');
                 break;
+            case 'gambit':
+                await exec('brew install gambit-scheme');
+                await exec('ln -s /usr/local/Cellar/gambit-scheme/4.9.3_1/v4.9.3/bin/gsi /usr/local/bin/gsi');
+                await exec('ln -s /usr/local/Cellar/gambit-scheme/4.9.3_1/v4.9.3/bin/gsc /usr/local/bin/gsc');
+                break;
             case 'mit':
                 await exec('brew install mit-scheme');
                 break;
@@ -29,6 +34,9 @@ async function main() {
 
             case'chez':
                 await exec('sudo apt install chezscheme');
+                break;
+            case'gambit':
+                await exec('sudo apt install gambc');
                 break;
             case'mit':
                 await exec('sudo apt install mit-scheme');
