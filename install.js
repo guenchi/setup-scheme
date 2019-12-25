@@ -24,6 +24,9 @@ async function main() {
                 await exec('ln -s /usr/local/Cellar/gambit-scheme/4.9.3_1/v4.9.3/bin/gsi /usr/local/bin/gsi');
                 await exec('ln -s /usr/local/Cellar/gambit-scheme/4.9.3_1/v4.9.3/bin/gsc /usr/local/bin/gsc');
                 break;
+            case 'grebil':
+                await exec('brew install gerbil-scheme');
+                break;
             case 'mit':
                 await exec('brew install mit-scheme');
                 break;
