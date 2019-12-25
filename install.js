@@ -57,7 +57,7 @@ async function main() {
                 await exec('sudo apt install racket');
                 break;
             case'guile':
-                await exec('sudo apt install guile');
+                await exec('sudo apt install guile-2.2');
                 break;
         }
         
