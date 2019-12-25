@@ -32,7 +32,7 @@ for Grebil Scheme:
 ```
 Grebil Scheme has only MacOS version.
 
-# Implementation tag: 
+### Implementation tag: 
 ```
 Chez Scheme          chez
 Gambit Scheme        gambit
@@ -43,7 +43,7 @@ Racket               racket
 
 
 
-# Todo:
+### Todo:
 ```
 cyclone
 bigloo
