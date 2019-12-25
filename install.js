@@ -47,6 +47,9 @@ async function main() {
             case'mit':
                 await exec('sudo apt install mit-scheme');
                 break;
+            case 'racket':
+                await exec('sudo apt install minimal-racket');
+                break;
         }
         
     }
