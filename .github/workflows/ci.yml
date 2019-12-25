@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
 
@@ -33,7 +33,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: mit
 
@@ -48,7 +48,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@master
+      uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
 
