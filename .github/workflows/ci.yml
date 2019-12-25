@@ -100,7 +100,7 @@ jobs:
       with:
         implementation: chicken
 
-    - run: csi --version
+    - run: csi -v
 
   Linux-Chez:
 
@@ -167,12 +167,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # - name: Checkout
-    #   uses: actions/checkout@master
+    - name: Checkout
+      uses: actions/checkout@master
 
-    # - name: use Setup-Scheme
-    #   uses: guenchi/setup-scheme@dev2
-    #   with:
-    #     implementation: mit
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@dev2
+      with:
+        implementation: chicken
 
-    - run: csi --version
+    - run: csi -v
