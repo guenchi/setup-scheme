@@ -30,6 +30,9 @@ async function main() {
             case 'mit':
                 await exec('brew install mit-scheme');
                 break;
+            case 'racket':
+                await exec('brew cask install racket');
+                break;
         }
 
     } else if (process.platform === 'linux') {
