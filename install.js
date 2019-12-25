@@ -42,7 +42,7 @@ async function main() {
                 await exec('sudo apt install gambc');
                 break;
             case 'grebil':
-                await exec('sudo apt install gerbil');
+                await exec('sudo apt install gerbil-scheme');
                 break;
             case'mit':
                 await exec('sudo apt install mit-scheme');
