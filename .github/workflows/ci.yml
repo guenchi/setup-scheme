@@ -69,6 +69,21 @@ jobs:
 
     - run: scheme --version
 
+    Linux-Gambit:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@dev2
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
   Linux-MIT:
 
     runs-on: ubuntu-latest
