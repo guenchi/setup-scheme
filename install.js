@@ -26,8 +26,6 @@ async function main() {
                 break;
             case 'grebil':
                 await exec('brew install gerbil-scheme');
-                await exec('export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH');
-                await exec('export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec');
                 break;
             case 'mit':
                 await exec('brew install mit-scheme');
