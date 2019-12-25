@@ -39,7 +39,7 @@ jobs:
 
     - run: scheme --version
 
-  Linux:
+  Linux-Chez:
 
     runs-on: ubuntu-latest
 
@@ -51,6 +51,21 @@ jobs:
       uses: guenchi/setup-scheme@dev2
       with:
         implementation: chez
+
+    - run: scheme --version
+
+  Linux-MIT:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@dev2
+      with:
+        implementation: mit
 
     - run: scheme --version
 

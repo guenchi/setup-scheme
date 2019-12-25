@@ -30,6 +30,9 @@ async function main() {
             case'chez':
                 await exec('sudo apt install chezscheme');
                 break;
+            case'mit':
+                await exec('sudo apt install mit-scheme');
+                break;
         }
         
     }
