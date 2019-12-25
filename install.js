@@ -53,11 +53,11 @@ async function main() {
             case'mit':
                 await exec('sudo apt install mit-scheme');
                 break;
-            case'mit':
-                await exec('sudo apt install guile');
-                break;
             case 'racket':
                 await exec('sudo apt install racket');
+                break;
+            case'guile':
+                await exec('sudo apt install guile');
                 break;
         }
         
