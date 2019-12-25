@@ -87,6 +87,21 @@ jobs:
 
     - run: racket --version
 
+  MacOS-Guile:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: guile
+
+    - run: guile --version
+
   MacOS-Chicken:
 
     runs-on: macos-latest
@@ -162,3 +177,18 @@ jobs:
 
     - run: racket --version
 
+
+  Linux-Guile:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: guile
+
+    - run: guile --version

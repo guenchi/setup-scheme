@@ -1,7 +1,7 @@
 ![](https://github.com/guenchi/setup-scheme/workflows/Master/badge.svg)
 
 # setup-scheme
-Github Action CI / CD setup for Scheme
+Github Actions CI / CD setup for Scheme
 
 ### Usage
 
@@ -40,16 +40,8 @@ Gambit Scheme              gambit           X               X
 Grebil Scheme              grebil           X
 MIT Scheme                 mit              X               X
 Racket                     racket           X               X
+Guile Scheme               guile            X               X
 Chicken Scheme             chicken          X
 ```
 
 
-
-### Todo:
-```
-cyclone
-bigloo
-larceny
-ypsilon
-guile
-```
