@@ -20,19 +20,28 @@ jobs:
     - uses: guenchi/setup-scheme@master
       with:
         implementation: chez
-    - run: chez youTestFiles.ss
+    - run: chez yourTestFiles.ss
 ```
 
-implementation surpport: 
+for Grebil Scheme:
+```
+    - run: |
+            export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
+            export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
+            gxi yourTestFiles.ss
+```
+
+# Implementation tag: 
 ```
 Chez Scheme          chez
 Gambit Scheme        gambit
 MIT Scheme           mit
 ```
 
-todo:
+
+
+# Todo:
 ```
-grebil
 cyclone
 bigloo
 rackect
