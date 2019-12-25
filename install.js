@@ -16,8 +16,11 @@ async function main() {
     if (process.platform === 'darwin') {
         switch (implementation) {
 
-            case'chez':
+            case 'chez':
                 await exec('brew install chezscheme');
+                break;
+            case 'mit':
+                await exec('brew install mit-scheme');
                 break;
         }
 
@@ -26,6 +29,9 @@ async function main() {
 
             case'chez':
                 await exec('sudo apt install chezscheme');
+                break;
+            case'mit':
+                await exec('sudo apt install mit-scheme');
                 break;
         }
         

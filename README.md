@@ -30,7 +30,6 @@ implementation surpport:
 gambit
 grebil
 cyclone
-mit
 bigloo
 rackect
 larceny
