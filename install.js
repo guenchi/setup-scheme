@@ -30,6 +30,9 @@ async function main() {
             case 'mit':
                 await exec('brew install mit-scheme');
                 break;
+            case 'racket':
+                await exec('brew install minimal-racket');
+                break;
         }
 
     } else if (process.platform === 'linux') {
@@ -43,6 +46,9 @@ async function main() {
                 break;
             case'mit':
                 await exec('sudo apt install mit-scheme');
+                break;
+            case 'racket':
+                await exec('sudo apt install racket');
                 break;
         }
         
