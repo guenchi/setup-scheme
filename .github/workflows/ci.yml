@@ -100,7 +100,7 @@ jobs:
       with:
         implementation: chicken
 
-    - run: csi -v
+    - run: csi
 
   Linux-Chez:
 
@@ -175,4 +175,4 @@ jobs:
       with:
         implementation: chicken
 
-    - run: csi -v
+    - run: csi
