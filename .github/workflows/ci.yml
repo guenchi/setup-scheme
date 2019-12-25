@@ -170,9 +170,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: use Setup-Scheme
-      uses: guenchi/setup-scheme@dev2
-      with:
-        implementation: chicken
+    # - name: use Setup-Scheme
+    #   uses: guenchi/setup-scheme@dev2
+    #   with:
+    #     implementation: chicken
 
     - run: csi

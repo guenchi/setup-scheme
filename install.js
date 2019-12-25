@@ -54,8 +54,6 @@ async function main() {
                 await exec('sudo apt install racket');
                 break;
             case 'chicken':
-                await exec('rm /usr/local/bin/csi');
-                await exec('rm /usr/local/bin/csc');
                 await exec('sudo apt install chicken-bin');
                 break;
         }
