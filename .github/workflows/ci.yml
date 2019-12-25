@@ -39,7 +39,7 @@ jobs:
 
     - run: gsi -v
 
-  MacOS-Gambit:
+  MacOS-Grebil:
 
     runs-on: macos-latest
 
