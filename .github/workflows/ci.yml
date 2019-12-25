@@ -52,7 +52,7 @@ jobs:
       with:
         implementation: grebil
 
-    - run: gxi
+    - run: gsi -v
 
   MacOS-MIT:
 
