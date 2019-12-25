@@ -54,7 +54,7 @@ async function main() {
                 await exec('sudo apt install racket');
                 break;
             case 'chicken':
-                await exec('sudo apt install chicken-bin');
+                await exec('sudo apt install chicken-scheme');
                 break;
         }
         
