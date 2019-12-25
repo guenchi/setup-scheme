@@ -36,7 +36,7 @@ async function main() {
                 await exec('sudo apt install chezscheme');
                 break;
             case'gambit':
-                await exec('sudo apt-get install gambitc');
+                await exec('sudo apt install gambc');
                 break;
             case'mit':
                 await exec('sudo apt install mit-scheme');
