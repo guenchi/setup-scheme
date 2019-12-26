@@ -1,6 +1,7 @@
+# setup-scheme
+
 ![](https://github.com/guenchi/setup-scheme/workflows/Master/badge.svg)
 
-# setup-scheme
 Github Actions CI / CD setup for Scheme
 
 ### Usage
