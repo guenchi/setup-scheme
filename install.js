@@ -21,8 +21,8 @@ async function main() {
                 break;
             case 'gambit':
                 await exec('brew install gambit-scheme');
-                await exec('ln -s /usr/local/Cellar/gambit-scheme/4.9.3_1/v4.9.3/bin/gsi /usr/local/bin/gsi');
-                await exec('ln -s /usr/local/Cellar/gambit-scheme/4.9.3_1/v4.9.3/bin/gsc /usr/local/bin/gsc');
+                await exec('CURRENTDIR=$(find /usr/local/Cellar/gambit-scheme -type l -name current)');
+                await exec('echo "::add-path::${CURRENTDIR}/bin"');
                 break;
             case 'grebil':
                 await exec('brew install gerbil-scheme');
