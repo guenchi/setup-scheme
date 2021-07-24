@@ -39,7 +39,7 @@ jobs:
 
     - run: gsi -v
 
-  MacOS-Grebil:
+  MacOS-Gerbil:
 
     runs-on: macos-latest
 
@@ -50,7 +50,7 @@ jobs:
     - name: use Setup-Scheme
       uses: guenchi/setup-scheme@master
       with:
-        implementation: grebil
+        implementation: gerbil
 
     - run: |
             export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
