@@ -24,7 +24,7 @@ jobs:
     - run: chez yourTestFiles.ss
 ```
 
-for Grebil Scheme:
+for Gerbil Scheme:
 ```
     - run: |
             export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
@@ -38,7 +38,7 @@ for Grebil Scheme:
                                           MacOS           Linux
 Chez Scheme                chez             X               X
 Gambit Scheme              gambit           X               X
-Grebil Scheme              grebil           X
+Gerbil Scheme              gerbil           X
 MIT Scheme                 mit              X               X
 Racket                     racket           X               X
 Guile Scheme               guile            X               X
