@@ -55,6 +55,9 @@ async function main() {
       case "guile":
         await exec("sudo apt install guile-2.2");
         break;
+      case "chicken":
+        await exec("sudo apt install chicken-bin");
+        break;
     }
   } else if (process.platform === "win32") {
     switch (implementation) {
