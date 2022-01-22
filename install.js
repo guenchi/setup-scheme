@@ -1,5 +1,6 @@
 import * as core from "@actions/core";
 import { exec, getExecOutput } from "@actions/exec";
+import { copyFileSync, existsSync } from "fs"
 
 main().catch((err) => {
   core.setFailed(err.message);
@@ -62,6 +63,16 @@ async function main() {
     }
   } else if (process.platform === "win32") {
     switch (implementation) {
+      case "chez":
+        await exec("curl -LO https://github.com/cisco/ChezScheme/releases/download/v9.5.6/ChezScheme9.5.6.exe");
+        await exec("./ChezScheme9.5.6.exe", ["-silent"]);
+        // wait for the installer to finish
+        while (!existsSync("C:/Program Files (x86)/Chez Scheme 9.5.6/bin/ti3nt/scheme.exe")) {
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+        }
+        core.addPath("C:/Program Files (x86)/Chez Scheme 9.5.6/bin/ti3nt/");
+        copyFileSync("C:/Program Files (x86)/Chez Scheme 9.5.6/bin/ti3nt/scheme.exe", "C:/Program Files (x86)/Chez Scheme 9.5.6/bin/ti3nt/chez.exe");
+        break;
       case "gambit":
         await exec("choco install gambit");
         break;
