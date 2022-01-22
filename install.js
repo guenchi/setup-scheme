@@ -1,5 +1,5 @@
 import * as core from "@actions/core";
-import { exec } from "@actions/exec";
+import { exec, getExecOutput } from "@actions/exec";
 
 main().catch((err) => {
   core.setFailed(err.message);
@@ -17,10 +17,9 @@ async function main() {
         break;
       case "gambit":
         await exec("brew install gambit-scheme");
-        await exec(
-          "CURRENTDIR=$(find /usr/local/Cellar/gambit-scheme -type l -name current)"
-        );
-        await exec('echo "::add-path::${CURRENTDIR}/bin"');
+        const ex = await getExecOutput("find /usr/local/Cellar/gambit-scheme -type l -name current")
+        const dir = (ex.stdout || ex.stderr).trim();
+        core.addPath(`${dir}/bin`);
         break;
       case "gerbil":
         await exec("brew install gerbil-scheme");
