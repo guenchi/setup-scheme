@@ -35,14 +35,14 @@ for Gerbil Scheme:
 
 ### Implementation tag: 
 ```
-                                          MacOS           Linux
+                                          MacOS           Linux   Windows
 Chez Scheme                chez             X               X
 Gambit Scheme              gambit           X               X
 Gerbil Scheme              gerbil           X
 MIT Scheme                 mit              X               X
-Racket                     racket           X               X
+Racket                     racket           X               X       x
 Guile Scheme               guile            X               X
-Chicken Scheme             chicken          X
+Chicken Scheme             chicken          X                       x
 ```
 
 

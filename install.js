@@ -56,5 +56,16 @@ async function main() {
         await exec("sudo apt install guile-2.2");
         break;
     }
+  } else if (process.platform === "win32") {
+    switch (implementation) {
+      case "racket":
+        await exec("choco install racket");
+        core.addPath("C:/Program Files/Racket");
+        break;
+      case "chicken":
+        await exec("choco install chicken");
+        core.addPath("C:/tools/chicken/bin");
+        break;
+    }
   }
 }

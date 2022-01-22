@@ -192,3 +192,34 @@ jobs:
         implementation: guile
 
     - run: guile --version
+
+  Windows-Chicken:
+
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chicken
+
+    - run: chicken --version
+
+
+  Windows-Racket:
+
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: racket
+
+    - run: racket --version
