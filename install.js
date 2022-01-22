@@ -24,6 +24,8 @@ async function main() {
         break;
       case "gerbil":
         await exec("brew install gerbil-scheme");
+        core.addPath("/usr/local/opt/gerbil-scheme/libexec/bin")
+        core.exportVariable("GERBIL_HOME", "/usr/local/opt/gerbil-scheme/libexec")
         break;
       case "mit":
         await exec("brew install mit-scheme");

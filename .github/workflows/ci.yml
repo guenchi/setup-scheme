@@ -52,10 +52,7 @@ jobs:
       with:
         implementation: gerbil
 
-    - run: |
-            export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
-            export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
-            gxi
+    - run: which gxi
 
   MacOS-MIT:
 
