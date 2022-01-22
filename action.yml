@@ -13,4 +13,4 @@ inputs:
     description: Option Specific
 runs:
   using: node12
-  main: install.js
+  main: ./dist/install.js

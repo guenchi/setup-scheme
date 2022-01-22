@@ -1,5 +1,5 @@
-const core = require("@actions/core");
-const { exec } = require("@actions/exec");
+import * as core from "@actions/core";
+import { exec } from "@actions/exec";
 
 main().catch((err) => {
   core.setFailed(err.message);
