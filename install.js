@@ -63,6 +63,9 @@ async function main() {
     }
   } else if (process.platform === "win32") {
     switch (implementation) {
+      case "gambit":
+        await exec("choco install gambit");
+        break;
       case "racket":
         await exec("choco install racket");
         core.addPath("C:/Program Files/Racket");

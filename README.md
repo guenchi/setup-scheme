@@ -37,7 +37,7 @@ for Gerbil Scheme:
 ```
                                           MacOS           Linux   Windows
 Chez Scheme                chez             X               X
-Gambit Scheme              gambit           X               X
+Gambit Scheme              gambit           X               X       x
 Gerbil Scheme              gerbil           X
 MIT Scheme                 mit              X               X
 Racket                     racket           X               X       x
