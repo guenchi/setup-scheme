@@ -7,10 +7,13 @@ branding:
 inputs:
   implementation:
     description: Implementation of Scheme to use
+    required: true
   version:
     description: Version range or exact version of Scheme to use
+    required: false
   option:
     description: Option Specific
+    required: false
 runs:
   using: node12
-  main: install.js
+  main: ./dist/install.js

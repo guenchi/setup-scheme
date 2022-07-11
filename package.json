@@ -2,9 +2,26 @@
   "name": "setup-scheme",
   "version": "0.0.8",
   "license": "MIT",
+  "main": "./dist/install.js",
+  "source": "./install.js",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/exec": "^1.0.0",
-    "semver": "^6.3.0"
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0"
+  },
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "build": "parcel build --target main",
+    "dev": "parcel --target main watch"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1",
+    "shx": "^0.3.4"
+  },
+  "targets": {
+    "main": {
+      "context": "node",
+      "includeNodeModules": true,
+      "optimize": true
+    }
   }
 }

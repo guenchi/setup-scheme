@@ -52,10 +52,7 @@ jobs:
       with:
         implementation: gerbil
 
-    - run: |
-            export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
-            export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
-            gxi
+    - run: which gxi
 
   MacOS-MIT:
 
@@ -192,3 +189,49 @@ jobs:
         implementation: guile
 
     - run: guile --version
+
+  Windows-Gambit:
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
+  Windows-Chicken:
+
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chicken
+
+    - run: chicken --version
+
+
+  Windows-Racket:
+
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: racket
+
+    - run: racket --version

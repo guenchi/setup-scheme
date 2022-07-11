@@ -10,39 +10,40 @@ See [action.yml](https://github.com/guenchi/setup-scheme/blob/master/action.yml)
 
 Exemple: [ci.yml](https://github.com/guenchi/setup-scheme/blob/master/.github/workflows/ci.yml)
 
-```
-on: push
+```yaml
+name: CI
+
+on: 
+   push:
 
 jobs:
-  jobsName:
-    runs-on: macos-latest
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - windows-latest
+          - ubuntu-latest
+          - macos-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: guenchi/setup-scheme@master
-      with:
-        implementation: chez
-    - run: chez yourTestFiles.ss
-```
-
-for Gerbil Scheme:
-```
-    - run: |
-            export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
-            export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
-            gxi yourTestFiles.ss
+      - uses: actions/checkout@master
+      - uses: guenchi/setup-scheme@master
+        with:
+          implementation: chez
 ```
 
 
 ### Implementation tag: 
 ```
-                                          MacOS           Linux
-Chez Scheme                chez             X               X
-Gambit Scheme              gambit           X               X
+                                          MacOS           Linux   Windows
+Chez Scheme                chez             X               X       x
+Gambit Scheme              gambit           X               X       x
 Gerbil Scheme              gerbil           X
 MIT Scheme                 mit              X               X
-Racket                     racket           X               X
+Racket                     racket           X               X       x
 Guile Scheme               guile            X               X
-Chicken Scheme             chicken          X
+Chicken Scheme             chicken          X               x       x
 ```
 
 

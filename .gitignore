@@ -1,5 +1,6 @@
 node_modules
 lib
+.parcel-cache
 
 # Jetbrains
 /.idea
@@ -93,3 +94,5 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+
