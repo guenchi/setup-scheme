@@ -5,7 +5,7 @@
   "main": "./dist/install.js",
   "source": "./install.js",
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.9.1",
     "@actions/exec": "^1.1.0"
   },
   "scripts": {
